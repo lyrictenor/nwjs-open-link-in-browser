@@ -13,11 +13,8 @@
     "david": "^6.1.6",
     "eclint": "^0.2.6",
     "eslint": "^1.0.0-rc",
-    "espower-loader": "^0.11.0",
     "fixpack": "^2.2.0",
     "globstar": "^1.0.0",
-    "mocha": "^2.2.5",
-    "power-assert": "^0.11.0",
     "touch": "^1.0.0"
   },
   "engines": {
@@ -39,7 +36,6 @@
     "fixpack": "fixpack",
     "git:tag": "git tag v${npm_package_version}",
     "lint": "npm run eclint && npm run eslint",
-    "test": "mocha --require ./enable-power-assert.js -- ./test.js",
-    "verify": "npm run lint && npm run test"
+    "verify": "npm run lint"
   }
 }
