@@ -1,10 +1,20 @@
 'use strict';
-module.exports = function (str, opts) {
-  if (typeof str !== 'string') {
-    throw new TypeError('Expected a string');
+
+var isNwjs = require('is-nwjs');
+var type = require('type-detect');
+
+module.exports = function (url, event) {
+  if (!isNwjs) {
+    return;
   }
 
-  opts = opts || {};
-
-  return str + ' & ' + (opts.postfix || 'rainbows');
+  var gui = require('nw.gui');
+  if (type(url) === 'string') {
+    event.preventDefault();
+    gui.Shell.openExternal(url);
+  } else {
+    event = url;
+    event.preventDefault();
+    gui.Shell.openExternal(event.target.href);
+  }
 };
