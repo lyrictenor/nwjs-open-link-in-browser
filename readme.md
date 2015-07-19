@@ -32,6 +32,7 @@ var nwjsOpenLinkInBrowser = require("nwjs-open-link-in-browser");
 </a>
 
 <button
+  type="button"
   onclick="nwjsOpenLinkInBrowser('http://example.com');"
   >
   Example.com
@@ -50,7 +51,8 @@ var nwjsOpenLinkInBrowser = require("nwjs-open-link-in-browser");
 </a>
 
 <button
-  onClick={nwjsOpenLinkInBrowser.bind(this, 'http://example.com')}
+  type="button"
+  onClick={nwjsOpenLinkInBrowser.bind(this, "http://example.com")}
   >
   Example.com
 </button>
