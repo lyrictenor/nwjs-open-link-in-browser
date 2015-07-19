@@ -23,16 +23,16 @@ $ npm install --save nwjs-open-link-in-browser
 ## Usage
 
 ```html
-var linkInBrowser = require("nwjs-open-link-in-browser");
+var nwjsOpenLinkInBrowser = require("nwjs-open-link-in-browser");
 
 <a href="https://github.com/lyrictenor/nwjs-emoji-app"
-  onClick="linkInBrowser();"
+  onClick="nwjsOpenLinkInBrowser();"
   >
   github.com/lyrictenor/nwjs-emoji-app
 </a>
 
 <button
-  onclick="linkInBrowser('http://example.com');"
+  onclick="nwjsOpenLinkInBrowser('http://example.com');"
   >
   Example.com
 </button>
@@ -41,16 +41,16 @@ var linkInBrowser = require("nwjs-open-link-in-browser");
 ### JSX
 
 ```html
-var linkInBrowser = require("nwjs-open-link-in-browser");
+var nwjsOpenLinkInBrowser = require("nwjs-open-link-in-browser");
 
 <a href="https://github.com/lyrictenor/nwjs-emoji-app"
-  onClick={linkInBrowser.bind(this)}
+  onClick={nwjsOpenLinkInBrowser.bind(this)}
   >
   github.com/lyrictenor/nwjs-emoji-app
 </a>
 
 <button
-  onClick={linkInBrowser.bind(this, 'http://example.com')}
+  onClick={nwjsOpenLinkInBrowser.bind(this, 'http://example.com')}
   >
   Example.com
 </button>
@@ -60,23 +60,17 @@ var linkInBrowser = require("nwjs-open-link-in-browser");
 
 ## API
 
-### nwjsOpenLinkInBrowser(input, [options])
+### nwjsOpenLinkInBrowser([url,] event)
 
-#### input
+Jump to the href property.
 
-*Required*  
+#### url
+
+*Optional*
+
 Type: `string`
 
-Lorem ipsum.
-
-#### options
-
-##### foo
-
-Type: `boolean`  
-Default: `false`
-
-Lorem ipsum.
+Jump to url.
 
 
 ## Changelog
