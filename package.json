@@ -1,6 +1,6 @@
 {
   "name": "nwjs-open-link-in-browser",
-  "description": "My spectacular module",
+  "description": "Open a link in browser for NW.js and browser.",
   "version": "0.0.0",
   "author": {
     "name": "sanemat",
@@ -38,7 +38,7 @@
     "nwjs"
   ],
   "license": "MIT",
-  "repository": "sanemat/nwjs-open-link-in-browser",
+  "repository": "lyrictenor/nwjs-open-link-in-browser",
   "scripts": {
     "changelog": "touch changelog.md && conventional-changelog -i changelog.md --overwrite --preset angular",
     "david": "david update",
