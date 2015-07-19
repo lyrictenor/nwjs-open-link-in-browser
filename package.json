@@ -27,7 +27,15 @@
     "index.js"
   ],
   "keywords": [
-    ""
+    "NW",
+    "NW.js",
+    "NWjs",
+    "browser",
+    "node-webkit",
+    "nodewebkit",
+    "nw",
+    "nw.js",
+    "nwjs"
   ],
   "license": "MIT",
   "repository": "sanemat/nwjs-open-link-in-browser",
