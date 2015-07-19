@@ -22,11 +22,38 @@ $ npm install --save nwjs-open-link-in-browser
 
 ## Usage
 
-```js
-var nwjsOpenLinkInBrowser = require('nwjs-open-link-in-browser');
+```html
+var linkInBrowser = require("nwjs-open-link-in-browser");
 
-nwjsOpenLinkInBrowser('unicorns');
-//=> unicorns & rainbows
+<a href="https://github.com/lyrictenor/nwjs-emoji-app"
+  onClick="linkInBrowser();"
+  >
+  github.com/lyrictenor/nwjs-emoji-app
+</a>
+
+<button
+  onclick="linkInBrowser('http://example.com');"
+  >
+  Example.com
+</button>
+```
+
+### JSX
+
+```html
+var linkInBrowser = require("nwjs-open-link-in-browser");
+
+<a href="https://github.com/lyrictenor/nwjs-emoji-app"
+  onClick={linkInBrowser.bind(this)}
+  >
+  github.com/lyrictenor/nwjs-emoji-app
+</a>
+
+<button
+  onClick={linkInBrowser.bind(this, 'http://example.com')}
+  >
+  Example.com
+</button>
 ```
 
 
