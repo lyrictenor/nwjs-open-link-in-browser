@@ -23,9 +23,9 @@ $ npm install --save nwjs-open-link-in-browser
 ## Usage
 
 ```html
-var nwjsOpenLinkInBrowser = require("nwjs-open-link-in-browser");
-
-<a href="https://github.com/lyrictenor/nwjs-emoji-app"
+<script type="text/javascript" src="build/nwjs-open-link-in-browser.js"></script>
+<a
+  href="https://github.com/lyrictenor/nwjs-emoji-app"
   onClick="nwjsOpenLinkInBrowser();"
   >
   github.com/lyrictenor/nwjs-emoji-app
@@ -39,12 +39,13 @@ var nwjsOpenLinkInBrowser = require("nwjs-open-link-in-browser");
 </button>
 ```
 
-### JSX
+### React.js + JSX + Browserify/Webpack
 
 ```html
 var nwjsOpenLinkInBrowser = require("nwjs-open-link-in-browser");
 
-<a href="https://github.com/lyrictenor/nwjs-emoji-app"
+<a
+  href="https://github.com/lyrictenor/nwjs-emoji-app"
   onClick={nwjsOpenLinkInBrowser.bind(this)}
   >
   github.com/lyrictenor/nwjs-emoji-app
@@ -57,7 +58,6 @@ var nwjsOpenLinkInBrowser = require("nwjs-open-link-in-browser");
   Example.com
 </button>
 ```
-
 
 
 ## API
