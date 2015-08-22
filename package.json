@@ -13,9 +13,9 @@
   },
   "devDependencies": {
     "browserify": "^11.0.0",
-    "conventional-changelog": "^0.1.0-beta",
+    "conventional-changelog": "^0.4.2",
     "david": "^6.1.6",
-    "eclint": "^0.2.6",
+    "eclint": "^1.1.1",
     "eslint": "^1.0.0-rc",
     "fixpack": "^2.2.0",
     "globstar": "^1.0.0",
