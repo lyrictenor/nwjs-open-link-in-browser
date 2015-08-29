@@ -8,8 +8,7 @@
     "url": "sane.jp"
   },
   "dependencies": {
-    "is-nwjs": "^1.0.1",
-    "type-detect": "^1.0.0"
+    "is-nwjs": "^1.0.1"
   },
   "devDependencies": {
     "browserify": "^11.0.0",
