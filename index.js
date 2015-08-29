@@ -1,21 +1,22 @@
 'use strict';
 
 var isNwjs = require('is-nwjs');
-var type = require('type-detect');
 
 module.exports = function (url, event) {
   if (isNwjs) {
     var gui = require('nw.gui');
-    if (type(url) === 'string') {
-      event.preventDefault();
-      gui.Shell.openExternal(url);
-    } else {
+    if (url && url.preventDefault) {
       event = url;
       event.preventDefault();
       gui.Shell.openExternal(event.target.href);
+    } else {
+      event.preventDefault();
+      gui.Shell.openExternal(url);
     }
-  } else if (type(url) === 'string') {
-    event.preventDefault();
-    window.location.href = url;
+  } else {
+    if (url && !url.preventDefault) {
+      event.preventDefault();
+      window.location.href = url;
+    }
   }
 };
